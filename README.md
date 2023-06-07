@@ -5,13 +5,13 @@ O sistema apresentado simula um processo de vendas. Ele permite casdasrar vendas
 <h2>Requisitos: </h2>
 <li>O sistema permite cadastrar diversas vendas no sistema;
 <li>Para cadastrar uma venda será necessário:</li>
-■ vendedor; <br>
-■ cliente;<br>
-■ código;<br>
-■ nome do produto; <br>
-■ preço; <br>
-■ quantidade;<br>
-■ valor total da compra.<br>
+- vendedor; <br>
+- cliente;<br>
+- código;<br>
+- nome do produto; <br>
+- preço; <br>
+- quantidade;<br>
+- valor total da compra.<br>
 
 ● O sistema não permite cadastrar vendas para clientes não cadastrados; <br>
 ● O sistema não permite cadastrar vendas de vendedores não cadastrados; <br>
