@@ -34,3 +34,4 @@ O sistema apresentado simula um processo de vendas. Ele permite casdasrar vendas
 - Criei uma classe Cliente e outra ClienteService, no cliente coloquei os atributos, os getters, o construtor e fiz um método menuCliente e no clienteService fiz a composição da classe cliente e coloquei os métodos. <br>
 - Criei uma classe SistemaRegistro, fiz o método menuPrincipal, usei o try e o catch e tratei algumas exception, e usei o while também. <br>
 - Criei uma classe Venda com todos os atrubutos, fiz a composição da classe Vnededor e da classe Cliente, e instanciei as classes VendedorService e ClienteService, e dentro da classe Venda implemenite os métodos de listarVendas, procurar por vendas, entre outras funcionalidades.
+- Criei uma classe RecursoNaoEncontradoException para poder modificar e tratar essas exception.
