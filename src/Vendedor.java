@@ -51,7 +51,6 @@ public class Vendedor {
                     break;
                 default:
                     System.out.println("Opção inválida");
-                    System.exit(0);
             }
         }
 

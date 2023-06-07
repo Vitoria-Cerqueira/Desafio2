@@ -53,7 +53,6 @@ public class Cliente {
 
                 default:
                     System.out.println("Opção inválida");
-                    System.exit(0);
             }
         }
 
