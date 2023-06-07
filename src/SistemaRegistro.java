@@ -1,5 +1,6 @@
 import exception.RecursoNaoEncontradoException;
 
+import java.time.format.DateTimeParseException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -51,6 +52,9 @@ public class SistemaRegistro {
             }
             catch (NumberFormatException err2){
                 System.out.println("Informe um numero inteiro");
+            }
+            catch (DateTimeParseException erroInput){
+                System.out.println("Formato de data invalido");
             }
             catch (InputMismatchException errInput){
                 System.out.println("Tipo invalido");
