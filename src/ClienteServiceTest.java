@@ -2,20 +2,15 @@ import exception.RecursoNaoEncontradoException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.when;
 
 public class ClienteServiceTest {
     Cliente cliente = new Cliente();
@@ -31,13 +26,13 @@ public class ClienteServiceTest {
     @Test
     public void testarCadastroDoCliente() {
 //        assertTrue(teclado.hasNext());
-        clienteService.cadastrarCliente(cliente);
+        clienteService.LoginCliente(cliente);
     }
 
     @Test
     public void testarEmailValido() {
         String email = "vitoria@gmail.com";
-        cliente = new Cliente("Vitoria", email, "123456", clientes);
+        cliente = new Cliente("Vitoria", email, "123456",clientes);
         String validarEmail = clienteService.validarEmail(email, clientes);
         assertEquals(email, validarEmail);
     }
