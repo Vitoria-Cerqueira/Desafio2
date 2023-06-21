@@ -1,5 +1,6 @@
 import exception.RecursoNaoEncontradoException;
 
+import java.util.Base64;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -20,13 +21,16 @@ public class VendedorService {
         System.out.println("Digite seu E-mail: ");
         String email = validarEmail(teclado.next(), vendedor.getVendedores());
 
+        System.out.println("Digite sua senha: ");
+        String senha = Base64.getEncoder().encodeToString(teclado.next().getBytes());
+
 
         System.out.println("Digite seu CPF: ");
         String cpf = teclado.next();
 
 
         if (!(vendedor.getVendedores().containsKey(cpf))){
-            vendedorObjeto = new Vendedor(nomeCliente, email, cpf, vendedor.getVendedores());
+            vendedorObjeto = new Vendedor(nomeCliente, email,senha, cpf, vendedor.getVendedores());
             vendedor.getVendedores().put(cpf, vendedorObjeto);
             System.out.println("Vendedor cadastrado com sucesso");
         } else {

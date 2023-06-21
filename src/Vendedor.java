@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Vendedor {
     private String nomeVedendor;
     private String email;
+    private String senha;
     private String cpf;
 
     private Map<String, Vendedor> vendedores = new HashMap<>();
@@ -14,14 +15,19 @@ public class Vendedor {
 
     }
 
-    public Vendedor(String nomeCliente, String email,String cpf, Map<String, Vendedor> vendedores){
+    public Vendedor(String nomeCliente, String email,String senha,String cpf, Map<String, Vendedor> vendedores){
         this.nomeVedendor = nomeCliente;
         this.email = email;
+        this.senha = senha;
         this.cpf = cpf;
         this.vendedores = vendedores;
     }
     public String getEmail() {
         return email;
+    }
+
+    public String getSenha() {
+        return senha;
     }
 
     public String getCpf() {
